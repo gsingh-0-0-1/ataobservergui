@@ -26,8 +26,7 @@ ProjectEntry.grid(row=2, column=1, sticky="ew")
 
 SubmitButton = tk.Button(text = "Submit",
 		width=25,
-		height=5,
-		bg = "blue")
+		height=5)
 SubmitLabel = Label(window, text = "")
 
 def handle_click(event):
