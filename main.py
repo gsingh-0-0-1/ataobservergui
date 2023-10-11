@@ -33,7 +33,7 @@ def handle_click(event):
 	user = UserEntry.get()
 	pid = ProjectEntry.get()
 	pname = PROJECTS[pid]
-	subprocess.run(("./slackpost.bash %s %s %s" % (user, pid, pname)).split(" "))
+	subprocess.run(["./slackpost.bash", user, pid, pname])
 
 
 SubmitButton.bind("<Button-1>", handle_click)
